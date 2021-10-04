@@ -1,0 +1,98 @@
+.alignments {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color:antiquewhite;
+}
+
+
+/* Upload Section ============================================================ */
+
+#div-add {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content:space-around;
+    background-color: white;
+    height: 100vh;
+}
+
+.add {
+    position: fixed;
+    background: white;
+}
+
+#upload-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+}
+
+.upld-btn {
+    background:black;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+#grade-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+#grds {
+    height: 3vh;
+}
+
+#title-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+/* #phto-add {
+    content: 'Select Photo';
+    background:rgb(61, 83, 63);
+} */
+
+/* Display Section =========================================================== */
+
+#div-display {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* List Section ============================================================== */
+
+.div-list {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    position: fixed;
+    right: 0;
+}
+
+
+/* Header ==================================================================== */
+
+/* header {
+
+} */
+
+h1 {
+    text-align: center;
+    font-size: 5vh;
+}
+
+.btn-names {
+    font-size: 3vh;
+    margin-right: 1vw;
+}
