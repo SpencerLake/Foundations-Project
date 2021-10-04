@@ -48,11 +48,19 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2vh;
+    /* margin-bottom: 2vh; */
 }
 
 #grds {
     height: 3vh;
+}
+
+#time-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
 }
 
 #title-name {
