@@ -18,8 +18,13 @@
 }
 
 .add {
-    position: fixed;
+    
     background: white;
+    height: 100vh;
+    width: 18vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #upload-div {
@@ -27,6 +32,7 @@
     flex-direction: row;
     align-items: center;
     justify-content:center;
+    margin-top: 10vh;
 }
 
 .upld-btn {
@@ -57,6 +63,14 @@
     margin-bottom: 5vh;
 }
 
+#title-add {
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 10px;
+}
+
 /* #phto-add {
     content: 'Select Photo';
     background:rgb(61, 83, 63);
@@ -67,6 +81,51 @@
 #div-display {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items:flex-start;
+    width: 40vw;
+}
+
+#post {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+#post-title {
+    font-size: 3vh;
+    margin-bottom: 1.5vh;
+}
+
+#post-contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 30vh;
+}
+
+#special-notice {
+    width: 8vw;
+}
+
+#images {
+    /* margin-left: 10vw; */
+    /* margin-right: 10vw; */
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+}
+
+.pictures {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#empty {
+    width: 8vw;
 }
 
 
@@ -76,8 +135,11 @@
     display: flex;
     flex-direction: row;
     background-color: white;
-    position: fixed;
-    right: 0;
+    width: 18vw;  
+}
+
+#clmb-list {
+    margin-top: 10vh;
 }
 
 
