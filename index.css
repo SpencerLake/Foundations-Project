@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    background-color:antiquewhite;
+    /* background-color:antiquewhite; */
 }
 
 
@@ -15,6 +15,7 @@
     align-content:space-around;
     background-color: white;
     height: 100vh;
+    margin-top: 8vh;
 }
 
 #add {
@@ -92,6 +93,7 @@
     justify-content: center;
     align-items:flex-start;
     width: 40vw;
+    margin-top: 8vh;
 }
 
 .post {
@@ -101,6 +103,8 @@
     align-items: center;
     margin-top: 5vh;
     margin-bottom: 5vh;
+    background-color: antiquewhite;
+    padding: 1vh;
 }
 
 #post-title {
@@ -144,6 +148,7 @@
     flex-direction: row;
     background-color: white;
     width: 18vw;  
+    margin-top: 8vh;
 }
 
 #clmb-list {
@@ -153,13 +158,58 @@
 
 /* Header ==================================================================== */
 
-/* header {
+#full-head {
+    position: fixed;
+}
 
-} */
+#header-over {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    width: 98vw;
+    height: 8vh;
+}
+
+#header-div {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    background: rgb(255, 255, 255);
+    z-index: 0;
+    width: 98vw;
+    height: 8vh;
+}
+
+.block {
+    min-height: 8vh;
+    width: 50%;
+    width: calc(50% + 2rem);
+}
+
+.div-left {
+    float:left;
+    clip-path: polygon(0 0, 100% 0, calc(100% - 3rem) 100%, 0% 100%);
+    background-image: url("indoor.jpeg");
+
+}
+
+.div-right {
+    float:right;
+    margin-left: -2rem;
+    clip-path: polygon(3rem 0, 100% 0, 100% 100%, 0% 100%);
+    background-image: url("outdoor.jpg");
+    background-size: cover;
+}
 
 h1 {
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 5vh;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
 }
 
 .btn-names {
