@@ -1,4 +1,7 @@
 const newFeed = document.querySelector('#div-display')
+const climbList = document.querySelector('clmb-list')
+
+
 
 function addPost(e) {
     e.preventDefault();
@@ -30,8 +33,8 @@ function addPost(e) {
                         <li>${timeSelect}</li>
                     </ul>
                 </div>
-                <div id="images>
-                    <img class="pictures" src="${picSelect}">
+                <div id="images">
+                    <img class="pictures" src="${picSelect}"/>
                 </div>
                 <div id="empty"></div>
             </div>
@@ -40,5 +43,10 @@ function addPost(e) {
     newFeed.appendChild(newPost)
 };
 
+
+
 const addForm = document.getElementById("add");
 addForm.addEventListener('submit', addPost);
+
+const exList = document.getElementById('new-list');
+exList.addEventListener('click', )

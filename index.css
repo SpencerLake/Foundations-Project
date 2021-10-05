@@ -153,6 +153,25 @@
 
 #clmb-list {
     margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-icon {
+    background:black;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+
+#new-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
 }
 
 
