@@ -88,13 +88,13 @@
 
 #div-display {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items:flex-start;
     width: 40vw;
 }
 
-#post {
+.post {
     width: 40vw;
     display: flex;
     flex-direction: column;
