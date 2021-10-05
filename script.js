@@ -1,6 +1,11 @@
 const newFeed = document.querySelector('#div-display')
-const climbList = document.querySelector('clmb-list')
+const climbList = document.querySelector('#clmb-list')
+const projectIdea = document.querySelector('#add')
 
+
+// function deletePost(postId){
+//     let post = document.getElementById('')
+// } 
 
 
 function addPost(e) {
@@ -24,7 +29,7 @@ function addPost(e) {
     const newPost = document.createElement('div')
     newPost.classList.add('post')
 
-    newPost.innerHTML = `<div class="post">
+    newPost.innerHTML = `<div class="post" id="${nameSelect}">
             <div id="post-title">${nameSelect}</div>
             <div id="post-contents">
                 <div id="special-notice">
@@ -40,13 +45,61 @@ function addPost(e) {
             </div>
         </div>
         `
+
+    const newList = document.createElement('div')
+    newList.classList.add('list-item')
+
+    newList.innerHTML = `
+        <div class="list-item" href="#${nameSelect}">
+            <div class="list-icon"></div>
+            <h3 id="${nameSelect}-list">${nameSelect}</h4>
+    `
+    
+    climbList.appendChild(newList)
     newFeed.appendChild(newPost)
 };
 
+let ideas = [
+    "Flying Dutchman",
+    "Pineapple Epxress",
+    "Bat Hang",
+    "Behemoth",
+    "Pinchy Hang",
+    "Infinidy Toes",
+    "Slippery Sloper",
+    "Dank Dyno",
+    "Flyin Squirell",
+    "Crimp Ladder"
+]
+
+const randomIdea = ideas[Math.floor(Math.random()*ideas.length)]
+
+
+
+function getIdea(e) {
+    e.preventDefault()
+    
+    const showIdea = document.createElement('p')
+    showIdea.innerHTML = randomIdea
+
+    projectIdea.appendChild(showIdea)
+
+    console.log()
+}
 
 
 const addForm = document.getElementById("add");
 addForm.addEventListener('submit', addPost);
 
-const exList = document.getElementById('new-list');
-exList.addEventListener('click', )
+const exList = document.getElementById('flying-dutchman')
+function scroll() {document.getElementById('example').scrollIntoView({behavior: 'auto', block: 'center', inline: 'center'});}
+// exList.addEventListener('click', scroll)
+
+const listSnap = document.getElementById
+
+
+// const elementSnap = document.getElementsByTagName('a')
+// elementSnap.add
+
+const projIdea = document.getElementById('proj-idea')
+projIdea.addEventListener('click', getIdea)

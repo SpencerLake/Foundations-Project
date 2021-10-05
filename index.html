@@ -27,9 +27,9 @@
             <div id="div-add">
                 <form id="add">
                     <div id="upload-div">
-                        <div class="upld-btn"></div>
-                        <h3 class="btn-names">Upload Climb</h3>
-                        <button type="submit" value="submit"></button>
+                        <!-- <div class="upld-btn"></div>
+                        <h3 class="btn-names">Upload Climb</h3> -->
+                        <button class="upload-button" type="submit" value="submit">Upload Climb</button>
                     </div>
 
                     <div id="grade-div">
@@ -67,14 +67,19 @@
 
                     <div>
                         <!-- <input type="file" id="photo-add" name="image" accept="image/*"/> -->
-                        <input type="text" id="photo-add" name="image">
+                        <input type="text" id="photo-add" name="image" placeholder="Image Url">
                     </div>
-                </form>
-            </div>
+                    <br>
+                    <div id='line-break'></div>
+                    <br>
+                    <button type="button" id="proj-idea">Get Project Idea Name</button>
+                    <p></p>
+                </form>  
+            </div>   
             <div id="div-display">
                 <div id="new-feed">
                     
-                    <div class="post" id="example">
+                    <!-- <div class="post" id="example">
                         <div id="post-title">
                             Flying Dutchmen
                         </div>
@@ -90,14 +95,14 @@
                             </div>
                             <div id="empty"></div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="div-list">
                 <div id="clmb-list">
-                    <div id="new-list" href="#example">
-                        <div class="list-icon"></div>
-                        <h4>Flying Dutchman</h4>
+                    <div id="new-list" >
+                        <!-- <div class="list-icon"></div> -->
+                        <h2 id='list-title'>List of Climbs</h2>
                     </div>
                 </div>
             </div>
