@@ -13,23 +13,15 @@ const getAllPosts = () => axios.get(baseURL).then(postsCallback).catch(errCallba
 const createPost = body => axios.post(baseURL, body).then(postsCallback).catch(errCallback)
 const deletePost = id => axios.delete(`${baseURL}/${id}`).then(postsCallback).catch(errCallback)
 
-// function deletePost(postId){
-//     let post = document.getElementById('')
-// } 
-
     
 
 function submitHandler(e) {
     e.preventDefault()
 
     let grade = document.querySelector('#grds')
-    // let gradeSelect = grade.value
     let time = document.querySelector('#tms')
-    // let timeSelect = time.value
     let name = document.querySelector('#title-add')
-    // let nameSelect = name.value
     let pic = document.querySelector('#photo-add')
-    // let picSelect = pic.value
 
     let bodyObj = {
         title: name.value,
@@ -65,7 +57,7 @@ function creatingPost(post) {
             <img class="pictures" src="${post.pic}"/>
         </div>
         <div id="empty">
-            <button onclick="deletePost(${post.id})">X</button>
+            <button class="delete-button" onclick="deletePost(${post.id})">X</button>
         </div>
     </div>
     </div>
@@ -129,13 +121,10 @@ addForm.addEventListener('submit', submitHandler);
 
 const exList = document.getElementById('flying-dutchman')
 function scroll() {document.getElementById('example').scrollIntoView({behavior: 'auto', block: 'center', inline: 'center'});}
-// exList.addEventListener('click', scroll)
 
 const listSnap = document.getElementById
 
 
-// const elementSnap = document.getElementsByTagName('a')
-// elementSnap.add
 
 const projIdea = document.getElementById('proj-idea')
 projIdea.addEventListener('click', getIdea)
