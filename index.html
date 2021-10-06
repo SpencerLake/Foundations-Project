@@ -75,6 +75,23 @@
             </div>   
             <div id="div-display">
                 <div id="new-feed">
+                    <div class="post" id="${post.title}">
+                        <div id="post-title">${post.title}</div>
+                        <div id="post-contents">
+                            <div id="special-notice">
+                                <ul>
+                                    <li>${post.grade}</li>
+                                    <li>${post.time}</li>
+                                </ul>
+                            </div>
+                            <div id="images">
+                                <img class="pictures" src="${post.pic}"/>
+                            </div>
+                            <div id="empty">
+                                <button type="button" class="delete-button">X</button>
+                            </div>
+                        </div>
+                        </div>
                 </div>
             </div>
             <div class="div-list">

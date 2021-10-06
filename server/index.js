@@ -9,7 +9,7 @@ app.use(cors())
 
 app.get('/api/posts', ctrl.getPosts)
 app.post('/api/posts', ctrl.createPost)
-app.delete('/api/houses/:id', ctrl.deletePost)
+app.delete('/api/posts/:id', ctrl.deletePost)
 
 const port = 4500
 
