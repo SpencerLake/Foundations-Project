@@ -72,9 +72,21 @@ function creatingPost(post) {
     newFeed.appendChild(postTemplate)
 
     console.log('post created')
+
+    const newList = document.createElement('div')
+    newList.classList.add('list-item')
+
+    newList.innerHTML = `
+        <div class="list-item" href="#${post.title}">
+            <div class="list-icon"></div>
+            <h3 id="${post.title}-list">${post.title}</h4>
+    `
+    
+    climbList.appendChild(newList)
 }
 
 function displayPosts(arr) {
+    newFeed.innerHTML = ``
     climbList.innerHTML = ``
     for (let i = 0; i < arr.length; i++) {
         creatingPost(arr[i])
