@@ -1,30 +1,105 @@
+
+
 const newFeed = document.querySelector('#div-display')
 const climbList = document.querySelector('#clmb-list')
 const projectIdea = document.querySelector('#add')
 
+const baseURL = `http://localhost:4500/api/posts`
+
+const postsCallback = ({ data: posts}) => displayPosts(posts)
+const errCallback = err => console.log(err)
+
+const getAllPosts = () => axios.get(baseURL).then(postsCallback).catch(errCallback)
+const createPost = body => axios.post(baseURL, body).then(postsCallback).catch(errCallback)
+const deletePost = id => axios.delete(`${baseURL}/${id}`).then(postsCallback).catch(errCallback)
 
 // function deletePost(postId){
 //     let post = document.getElementById('')
 // } 
 
+    
+
+function submitHandler(e) {
+    e.preventDefault()
+
+    let grade = document.querySelector('#grds')
+    // let gradeSelect = grade.value
+    let time = document.querySelector('#tms')
+    // let timeSelect = time.value
+    let name = document.querySelector('#title-add')
+    // let nameSelect = name.value
+    let pic = document.querySelector('#photo-add')
+    // let picSelect = pic.value
+
+    let bodyObj = {
+        title: name.value,
+        grade: grade.value,
+        time: time.value,
+        pic: pic.value
+    }
+
+    createPost(bodyObj)
+
+    name.value = ''
+    grade.value = ''
+    time.value = ''
+    pic.value = ''
+
+    console.log('submit handled')
+}
+
+function creatingPost(post) {
+    const postTemplate = document.createElement('div')
+    postTemplate.classList.add('post-template')
+
+    postTemplate.innerHTML = `<div class="post" id="${post.title}">
+    <div id="post-title">${post.title}</div>
+    <div id="post-contents">
+        <div id="special-notice">
+            <ul>
+                <li>${post.grade}</li>
+                <li>${post.time}</li>
+            </ul>
+        </div>
+        <div id="images">
+            <img class="pictures" src="${post.pic}"/>
+        </div>
+        <div id="empty"></div>
+    </div>
+    </div>
+    `
+
+    newFeed.appendChild(postTemplate)
+
+    console.log('post created')
+}
+
+function displayPosts(arr) {
+    climbList.innerHTML = ``
+    for (let i = 0; i < arr.length; i++) {
+        creatingPost(arr[i])
+    }
+}
 
 function addPost(e) {
     e.preventDefault();
     console.log("New post submitted")
     // axios.get("#")
-    let grade = document.querySelector('#grds')
-    let gradeSelect = grade.value
-    let time = document.querySelector('#tms')
-    let timeSelect = time.value
-    let name = document.querySelector('#title-add')
-    let nameSelect = name.value
-    let pic = document.querySelector('#photo-add')
-    let picSelect = pic.value
+    // let grade = document.querySelector('#grds')
+    // let gradeSelect = grade.value
+    // let time = document.querySelector('#tms')
+    // let timeSelect = time.value
+    // let name = document.querySelector('#title-add')
+    // let nameSelect = name.value
+    // let pic = document.querySelector('#photo-add')
+    // let picSelect = pic.value
 
     console.log(grade.value)
     console.log(timeSelect)
     console.log(nameSelect)
     console.log(picSelect)
+
+
 
     const newPost = document.createElement('div')
     newPost.classList.add('post')
@@ -89,7 +164,7 @@ function getIdea(e) {
 
 
 const addForm = document.getElementById("add");
-addForm.addEventListener('submit', addPost);
+addForm.addEventListener('submit', submitHandler);
 
 const exList = document.getElementById('flying-dutchman')
 function scroll() {document.getElementById('example').scrollIntoView({behavior: 'auto', block: 'center', inline: 'center'});}
@@ -103,3 +178,5 @@ const listSnap = document.getElementById
 
 const projIdea = document.getElementById('proj-idea')
 projIdea.addEventListener('click', getIdea)
+
+getAllPosts()
