@@ -4,7 +4,7 @@ const newFeed = document.querySelector('#div-display')
 const climbList = document.querySelector('#clmb-list')
 const projectIdea = document.querySelector('#add')
 
-const baseURL = `http://localhost:4500/api/posts`
+const baseURL = `/api/posts`
 
 const postsCallback = ({ data: posts}) => displayPosts(posts)
 const errCallback = err => console.log(err)
