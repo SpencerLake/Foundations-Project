@@ -1,0 +1,30 @@
+
+Code for template
+<!-- <div id="new-feed">
+                    <div class="post" id="${post.title}">
+                        <div id="post-title">Make Your First Post</div>
+                        <div id="post-contents">
+                            <div id="special-notice">
+                                <ul>
+                                    <li>Grade</li>
+                                    <li>Time</li>
+                                </ul>
+                            </div>
+                            <div id="images">
+                                <img class="pictures" src="https://media.istockphoto.com/photos/rock-climber-clinging-to-a-cliff-picture-id527531592?b=1&k=20&m=527531592&s=170667a&w=0&h=y3ieMR7SlqfSu6EH159_ZukHyasu_Kay89DqeWbsUFw="/>
+                            </div>
+                            <div id="empty">
+                                <button type="button" class="delete-button">X</button>
+                            </div>
+                        </div>
+                        </div>
+                </div> -->
+
+Code for the climb list (which probably wont be used)
+<!-- <div class="div-list">
+                <div id="clmb-list">
+                    <div id="new-list" >
+                        <h2 id='list-title'>List of Climbs</h2>
+                    </div>
+                </div>
+            </div> -->

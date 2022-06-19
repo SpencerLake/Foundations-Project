@@ -6,105 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <title>Vain Climber Tracker</title>
+    <title>Climbing Vanity</title>
 </head>
 <body>
     <header>
-        <div id="full-head">
-        <div id="header-div">
-            <div class="block div-left"></div>
-            <div class="block div-right"></div>
         </div>
         <div id="header-over">
-            <h1>
-                Vain Climber Tracker
-            </h1>
-        </div>
+            <div class="hdr-side">
+                <a href="add.html">Add Climb</a>
+            </div>
+            <div>
+                <h1>
+                    Climbing Vanity
+                </h1>
+            </div>
+            <div class="hdr-side"></div>
         </div>
     </header>
     <main>
         <div class="alignments">
-            
-            <div id="div-add">
-                <form id="add">
-                    <div id="upload-div">
-                        <button class="upload-button" type="submit" value="submit">Upload Climb</button>
-                    </div>
-
-                    <div id="grade-div">
-                        <h3 class="btn-names">Select Grade</h3>
-                        <label for="grades"></label>
-                        <select name="grades" id="grds">
-                            <option value="V0">V0</option>
-                            <option value="V1">V1</option>
-                            <option value="V2">V2</option>
-                            <option value="V3">V3</option>
-                            <option value="V4">V4</option>
-                            <option value="V5">V5</option>
-                            <option value="V6">V6</option>
-                            <option value="V7">V7</option>
-                            <option value="V8">V8</option>
-                            <option value="V9">V9</option>
-                            <option value="V10">V10</option>
-                        </select>
-                    </div>
-
-                    <div id="time-div">
-                        <h3 class="btn-names">Proj Time</h3>
-                        <label for="times"></label>
-                        <select name="times" id="tms">
-                            <option value="1 Day">1 Day</option>
-                            <option value="2 Days">2 Days</option>
-                            <option value="3-7 Days">3-7 Days</option>
-                            <option value="2 Weeks">2 Weeks</option>
-                        </select>
-                    </div>
-
-                    <div id="title-name">
-                        <input type="text" id="title-add" placeholder="Name Your Climb"/>
-                    </div>
-
-                    <div>
-                        <input type="text" id="photo-add" name="image" placeholder="Image Url">
-                    </div>
-                    <br>
-                    <div id='line-break'></div>
-                    <br>
-                    <button type="button" id="proj-idea">Get Project Idea Name</button>
-                    <p></p>
-                </form>  
-            </div>   
             <div id="div-display">
-                <div id="new-feed">
-                    <div class="post" id="${post.title}">
-                        <div id="post-title">Make Your First Post</div>
-                        <div id="post-contents">
-                            <div id="special-notice">
-                                <ul>
-                                    <li>Grade</li>
-                                    <li>Time</li>
-                                </ul>
-                            </div>
-                            <div id="images">
-                                <img class="pictures" src="https://media.istockphoto.com/photos/rock-climber-clinging-to-a-cliff-picture-id527531592?b=1&k=20&m=527531592&s=170667a&w=0&h=y3ieMR7SlqfSu6EH159_ZukHyasu_Kay89DqeWbsUFw="/>
-                            </div>
-                            <div id="empty">
-                                <button type="button" class="delete-button">X</button>
-                            </div>
-                        </div>
-                        </div>
-                </div>
             </div>
-            <div class="div-list">
-                <div id="clmb-list">
-                    <div id="new-list" >
-                        <h2 id='list-title'>List of Climbs</h2>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </main>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script src="script.js"></script>
+<script src="home.js"></script>
 </body>
 </html>

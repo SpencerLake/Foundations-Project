@@ -1,13 +1,16 @@
+/* Universal ================================================================= */
+
 .alignments {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    align-items: center;
+    justify-content:center;
 }
 
 
-/* Upload Section ============================================================ */
+/* Add Page ================================================================== */
 
-#div-add {
+.div-add {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -20,14 +23,14 @@
 #add {
     
     background: white;
-    height: 100vh;
+    height: 50vh;
     width: 18vw;
     display:flex;
     flex-direction: column;
     align-items: center;
 }
 
-#upload-div {
+.upload-div {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -129,6 +132,10 @@
     border: none;
 }
 
+#new-idea-div {
+    
+}
+
 
 /* Display Section =========================================================== */
 
@@ -136,20 +143,35 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:flex-start;
-    width: 40vw;
-    margin-top: 8vh;
+    align-items:center;
+    min-width: 50%;
+    margin-top: 20px;
 }
 
-.post {
-    width: 100%;
+#post-template {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#feed {
+    width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    justify-content: center;
+}
+
+.post {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
     background-color: antiquewhite;
-    padding: 1vh;
+    padding: 10px;
     border-radius: 10px;
 }
 
@@ -164,10 +186,15 @@
     flex-direction: row;
     justify-content: space-between;
     max-height: 30vh;
+    width: 100%;
 }
 
 #special-notice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 8vw;
+    padding: 3px;
 }
 
 #images {
@@ -192,8 +219,10 @@
 }
 
 .delete-button {
-    background: rgba(151,123,95,1) 76%;
-    border-radius: 10px;
+    background: antiquewhite;
+    border-radius: 5px;
+    border-width: 1px;
+    margin-right: 10px;
 }
 
 
@@ -253,12 +282,16 @@
 #header-over {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    z-index: 1;
-    position: absolute;
+    z-index: 0;
+    /* position: absolute; */
     width: 98vw;
     height: 10vh;
+}
+
+.hdr-side {
+    width: 100px;
 }
 
 #header-div {
