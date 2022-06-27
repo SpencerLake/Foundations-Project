@@ -12,7 +12,9 @@ const getAllPosts = () => axios.get(baseURL)
         .then(postsCallback).catch(errCallback)
 const deletePost = id => axios.delete(`${baseURL}/${id}`)
         .then(cleanPosts)
-        .then(postsCallback).catch(errCallback)
+        // .then(setTimeout(() =>{postsCallback},500))
+        .then(postsCallback)
+        .catch(errCallback)
 
 
 
@@ -52,7 +54,7 @@ function displayPosts(arr) {
 }
 
 function cleanPosts() {
-    displayArea.remove()
+    window.location.reload()
 }
 
 // Calls the function to populate page with posts

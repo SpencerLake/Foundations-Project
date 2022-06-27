@@ -39,6 +39,7 @@ function submitHandler(e) {
     pic.value = ''
     
     console.log('submit handled')
+    alert("Post created succesfully!")
 }
 
 // Code that defines the form and listens for when it is submitted =============

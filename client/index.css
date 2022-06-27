@@ -1,14 +1,66 @@
 /* Universal ================================================================= */
 
+body {
+    background-color: #495867;
+}
+
+header {
+    background-color: antiquewhite;
+    opacity: .75;
+}
+
 .alignments {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content:center;
 }
 
+.title-font {
+    font-family: 'Permanent Marker', cursive;    font-style: normal;
+    outline: none;
+    font-size: 50px;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Permanent Marker', cursive;    font-style: normal;
+}
+
+.hdr-link {
+    color: black;
+    transition: all ;
+}
+
+.hdr-link :hover {
+    color: black;
+    transform: scale(1.1);
+}
+
 
 /* Add Page ================================================================== */
+
+.popAlert {
+    width: 450px;
+    height: 40px;
+    border: solid 1px black;
+    border-radius: 8px;
+    opacity: .6;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+#success-pop {
+    background-color: rgb(158, 238, 158);
+}
+
+#failure-pop {
+    background-color: rgb(226, 144, 144);
+}
 
 .div-add {
     display: flex;
@@ -219,10 +271,21 @@
 }
 
 .delete-button {
-    background: antiquewhite;
-    border-radius: 5px;
-    border-width: 1px;
+    background: transparent;
+    /* border-radius: 5px; */
+    border-width: 0px;
     margin-right: 10px;
+    opacity: .5;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.delete-button :hover {
+    transform: scale(1.1);
+}
+
+.delete-button :active {
+    color: rgb(44, 88, 44);
 }
 
 
