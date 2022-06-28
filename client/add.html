@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <title>Climbing Vanity</title>
 </head>
 <body>
@@ -12,34 +15,25 @@
     </div>
     <div id="header-over">
         <div class="hdr-side">
-            <a href="index.html">Home</a>
+            <a class="hdr-link" href="index.html">
+                <p class="hdr-link">Home</p>
+            </a>
         </div>
         <div>
-            <h1>
+            <p class="title-font">
                 Create Climb
-            </h1>
+            </p>
         </div>
         <div class="hdr-side"></div>
     </div>
 </header>
     <main>
         <div class="alignments">
-            <!-- <div class="popAlert" id="success-pop">
-                <p>Post Succesfully Created!</p>
-            </div>
-            <div class="popAlert" id="failure-pop">
-                <p>Uh Oh, Something Went Wrong!
-                    Make Sure Everything Is Filled
-                    Out Correctly.
-                </p>
-            </div> -->
             <div class="div-add">
                 <form id="add">
                     <div class="upload-div">
                         <button class="upload-button" type="submit" value="submit">Upload Climb</button>
                     </div>
-
-                    <!-- Template for post -->
                     <div id="feed">
                         <div class="post" id="${post.title}">
                             <div id="post-title">
@@ -82,45 +76,6 @@
                             <input type="text" id="photo-add" name="image" placeholder="Image Url">
                             </div>
                     </div>
-                    
-
-                    <!-- <div id="grade-div">
-                        <h3 class="btn-names">Select Grade</h3>
-                        <label for="grades"></label>
-                        <select name="grades" id="grds">
-                            <option value="V0">V0</option>
-                            <option value="V1">V1</option>
-                            <option value="V2">V2</option>
-                            <option value="V3">V3</option>
-                            <option value="V4">V4</option>
-                            <option value="V5">V5</option>
-                            <option value="V6">V6</option>
-                            <option value="V7">V7</option>
-                            <option value="V8">V8</option>
-                            <option value="V9">V9</option>
-                            <option value="V10">V10</option>
-                        </select>
-                    </div>
-
-                    <div id="time-div">
-                        <h3 class="btn-names">Proj Time</h3>
-                        <label for="times"></label>
-                        <select name="times" id="tms">
-                            <option value="1 Day">1 Day</option>
-                            <option value="2 Days">2 Days</option>
-                            <option value="3-7 Days">3-7 Days</option>
-                            <option value="2 Weeks">2 Weeks</option>
-                        </select>
-                    </div>
-
-                    <div id="title-name">
-                        <input type="text" id="title-add" placeholder="Name Your Climb"/>
-                    </div>
-
-                    <div>
-                        <input type="text" id="photo-add" name="image" placeholder="Image Url">
-                    </div>
-                    <br> -->
                     <div id='line-break'></div>
                     <br>
                     <button type="button" id="proj-idea">Get Project Idea Name</button>

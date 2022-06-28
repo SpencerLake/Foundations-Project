@@ -30,7 +30,7 @@ a, a:hover, a:focus, a:active {
 
 .hdr-link {
     color: black;
-    transition: all ;
+    transition: all .2s ease-in-out ;
 }
 
 .hdr-link :hover {
@@ -67,14 +67,14 @@ a, a:hover, a:focus, a:active {
     flex-direction: column;
     justify-content: flex-start;
     align-content:space-around;
-    background-color: white;
+    background-color: transparent;
     height: 100vh;
     margin-top: 8vh;
 }
 
 #add {
     
-    background: white;
+    background: transparent;
     height: 50vh;
     width: 18vw;
     display:flex;
@@ -182,6 +182,12 @@ a, a:hover, a:focus, a:active {
     background: rgba(151,123,95,1) 76%;
     border-radius: 1vh;
     border: none;
+    transition: all .2s ease-in-out;
+}
+
+.upload-button :hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 #new-idea-div {
